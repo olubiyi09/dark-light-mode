@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Start Here */
+:root {
+  --color-light: #eee;
+  --color-dark: #222831;
+  --color-orange: #db6400;
+
+  --background: var(--color-light);
+  --foreground: var(--color-dark);
+}
+
+.darkmode {
+  --color-light: #eee;
+  --color-dark: #222831;
+  --color-orange: #db6400;
+
+  --background: var(--color-dark);
+  --foreground: var(--color-light);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+}
+
+.text-section {
+  width: 70%;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+.img-section img {
+  width: 100%;
+}
+
+.learn-btn,
+.signup-btn {
+  padding: 1rem;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--foreground);
+  color: var(--background);
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.signup-btn {
+  background-color: var(--color-orange);
+  margin-left: 1.5rem;
+}
+
+footer {
+  background-color: var(--foreground);
+  color: var(--background);
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.toggle-dark {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: var(--foreground);
+  padding: 2px 3px;
+  cursor: pointer;
+}
+
+.toggle-dark .txt {
+  font-size: 1.6rem;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    padding: 3rem 0;
+  }
+
+  .text-section {
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+
+  footer {
+    margin-top: 70%;
+  }
+}
